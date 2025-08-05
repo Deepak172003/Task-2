@@ -1,0 +1,174 @@
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                  url('https://placehold.co/1920x1080?text=Productivity+Background') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      color: #fff;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(5px);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .input-section {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    }
+
+    #addTaskBtn {
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: all 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #addTaskBtn:hover {
+      background: linear-gradient(135deg, #2980b9, #3498db);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #addTaskBtn:active {
+      transform: translateY(0);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    li:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .task-text {
+      flex: 1;
+    }
+
+    .task-controls {
+      display: flex;
+      gap: 8px;
+    }
+
+    .edit-btn, .remove-btn {
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .edit-btn {
+      background: linear-gradient(135deg, #f39c12, #e67e22);
+      color: white;
+    }
+
+    .edit-btn:hover {
+      background: linear-gradient(135deg, #e67e22, #f39c12);
+    }
+
+    .remove-btn {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      color: white;
+    }
+
+    .remove-btn:hover {
+      background: linear-gradient(135deg, #c0392b, #e74c3c);
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: #95a5a6;
+      opacity: 0.8;
+    }
+
+    .completed:hover {
+      transform: none;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 20px;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .input-section {
+        flex-direction: column;
+      }
+      
+      #addTaskBtn {
+        width: 100%;
+      }
+    }
+
+  
